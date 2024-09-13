@@ -196,7 +196,7 @@ int main()
         cout << endl;
         cout << "\x1b[32m<< ------ EDUCATION MANAGEMENT SYSTEM ------ >>\x1b[0m" << flush <<endl << endl;
         cout << "\x1b[32m Made by Omar Mohammed, 2024\x1b[0m" << flush << endl;
-        cout << "\x1b[32m Release version - v1.0\x1b[0m" << flush << endl << endl;
+        cout << "\x1b[32m Release version - v1.1\x1b[0m" << flush << endl << endl;
 
         cout << "Main Menu:" << endl;
         cout << "[1] Add students" << endl;
