@@ -1,11 +1,15 @@
 #include<bits/stdc++.h>
+#include"Professors.cpp"
 using namespace std;
 
-struct student
+class student: public professor
 {
     int id;
     string name;
     long phone_num;
+
+public:
+    student(){}
 
     student(int id,string n,long p)
     {
@@ -14,12 +18,12 @@ struct student
         this->phone_num=p;
     }
 
-    bool operator<(const student& other) const
+    bool operator<(student& other) const
     {
         return id<other.id;
     };
 
-    bool operator=(const student& other) const
+    bool operator=(student&other) const
     {
         return id==other.id;
     };

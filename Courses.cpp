@@ -1,15 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct course
+class course
 {
     string code;
     string name;
 
+public:
     course(string c,string n)
     {
-        code=c;
-        name=n;
+        this->code=c;
+        this->name=n;
     }
 
     bool operator<(const course& other) const
@@ -17,7 +18,7 @@ struct course
         return code<other.code;
     };
 
-    bool operator<(const course& other) const
+    bool operator=(const course& other) const
     {
         return code==other.code;
     };

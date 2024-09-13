@@ -6,10 +6,13 @@ struct professor
     string name;
     long phone_num;
 
+public:
+    professor(){}
+
     professor(string n,long p)
     {
-        name=n;
-        phone_num=p;
+        this->name=n;
+        this->phone_num=p;
     }
 
     bool operator<(const professor& other) const
